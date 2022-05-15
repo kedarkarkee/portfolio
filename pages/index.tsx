@@ -9,7 +9,7 @@ const Home: NextPage = () => {
         <Navigation />
       </div>
 
-      <div className=' pt-10'>
+      <div className='absolute top-0 right-10 -z-50'>
         <DeviceImage />
 
       </div>
