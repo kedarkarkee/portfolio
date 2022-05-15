@@ -1,0 +1,11 @@
+.Bezeir {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    height: 100vh;
+    background-color: blue;
+    z-index: -100;
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 78% 27%);
+    border-radius: 100px;
+}
