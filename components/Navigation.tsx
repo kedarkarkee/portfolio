@@ -4,26 +4,25 @@ import { caption } from "./typography";
 const Navigation = ()  => {
     const links = linksMap.map(l => (
 <li key={l.name} className='float-left'>
-    <a href={l.target} className={`block text-primary ${caption}`}>{l.name}</a>
+    <a href={l.target} className={`block text-primary ${caption} text-sm`}>{l.name}</a>
 
 </li>    
     
     ));
     return (
-    //   <div className="w-full h-14 shadow-default fixed top-0 flex items-center z-50">
-    <>
-          <div className="w-full px-40 flex items-center">
+      <div className="w-full h-14 bg-white shadow-default fixed top-0 flex items-center z-50">
+          <div className="w-full px-8 flex items-center">
               <a href="#" className="no-underline mr-auto">
-              <img src='https://www.svgrepo.com/show/134579/linkedin.svg' width={30} height={30} />
+              <img src='icons/avatar.svg' />
               </a>
-              <nav>
+              <nav className="flex align-center mob:hidden">
                   <ul className="list-none m-0 p-0 overflow-hidden">
          {links}
 
                   </ul>
               </nav>
           </div>
-      </>
+      </div>
     );
 }
 
